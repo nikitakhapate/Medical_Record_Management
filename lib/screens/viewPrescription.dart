@@ -154,7 +154,7 @@ Future<List> _getDetailsOfPatient( String owner) async {
   EthereumAddress address1=EthPrivateKey.fromHex(owner).address;
   var response = await ethClient.call(sender:address1,contract: contract, function: contract.function('getDetailsOfPatient'), params: [address1]);
 
-  print('_getDetailsOfPatient got access');
+  print('_getDetailsOfPatienot access');
   Prescription=response[2];
   return response;
 }
